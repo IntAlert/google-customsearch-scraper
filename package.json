@@ -1,0 +1,18 @@
+{
+  "name": "google-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "array-to-csv": "^1.0.1",
+    "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
+    "inquirer": "^5.2.0"
+  }
+}
