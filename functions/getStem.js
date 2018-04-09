@@ -8,7 +8,7 @@ const getStem = async () => {
 			default: ""
 		}
 	]
-	
+
 	return inquirer.prompt(questions)
 		.then(answers => {
 			return answers.stem;

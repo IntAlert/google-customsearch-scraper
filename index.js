@@ -8,8 +8,6 @@ const exportCSV = require('./functions/exportCSV');
 const main = async () => {
 
 	try {
-	
-		
 
 		const allItems = {};
 
@@ -17,7 +15,7 @@ const main = async () => {
 			let stem = await getStem();
 			stem = stem.trim();
 			if ( !stem ) break;
-			let items = await searchByStem()
+			let items = await searchByStem(stem)
 			allItems[stem] = items;
 		}
 

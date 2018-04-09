@@ -1,5 +1,5 @@
-# Google Scarper
-This CLI scrapers a Google custom search API endpoint and turns the JSON results into a CSV which is saved locally.
+# Google Scraper
+This CLI scrapes a Google custom search API endpoint and turns the JSON results into a CSV which is saved locally.
 
 ## Use 
 1. `yarn start`

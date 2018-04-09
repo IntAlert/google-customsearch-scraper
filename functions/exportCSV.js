@@ -13,7 +13,7 @@ const exportCSV = (filename, allItems) => {
 		'URL'
 	]);
 
-	// console.log(allItems);
+	console.log(allItems);
 
 	// each stem
 	for (const stem in allItems) {
@@ -25,8 +25,6 @@ const exportCSV = (filename, allItems) => {
 			
 			let item = items[i];
 
-			console.log(item.pagemap);
-
 			// each field
 			let row = [
 				stem,
@@ -36,15 +34,17 @@ const exportCSV = (filename, allItems) => {
 			];
 
 			rows.push(row);
+			
 		}
+
+		console.log(`${items.length - 1} result(s)` );
+		console.log(`${rows.length - 1} row(s)` );
 
 	}
 
-	console.log(`${rows.length - 1} result(s)` );
 
 	let csv = toCSV(rows)
 	let path = `output/${filename}.csv`;
-	console.log(path)
 	fs.writeFileSync(path, csv, 'utf8');
 
 	return rows;
